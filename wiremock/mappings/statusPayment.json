@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/payments/qrcode/[^/]+",
+    "headers": {
+      "Authorization": { "matches": ".*" },
+      "seller_id": { "matches": ".*" }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "seller_id": "54218a4d-3a3b-48e2-82dc-58f7df8509b2",
+      "hash_qr_code": "151b8eb68ac61573f72a84c9ab2feca2",
+      "status": "APPROVED",
+      "order_id": "DEV-1608748980",
+      "amount": 100,
+      "payment_request": {
+        "type": "CREDIT",
+        "delayed": false,
+        "authenticated": false,
+        "pre_authorization": false,
+        "save_card_data": false,
+        "transaction_type": "FULL",
+        "number_installments": 1,
+        "soft_descriptor": "LOJA*TESTE*COMPRA-123",
+        "dynamic_mcc": 1799
+      },
+      "payment_response": {
+        "payment_id": "1a938e0d-26ab-4ac2-b263-ab46a99e4356",
+        "seller_id": "54218a4d-3a3b-48e2-82dc-58f7df8509b2",
+        "amount": 100,
+        "currency": "BRL",
+        "order_id": "DEV-1608748980",
+        "status": "APPROVED",
+        "received_at": "2017-03-19T16:30:30.764Z",
+        "credit": {},
+        "debit": {}
+      }
+    }
+  }
+}

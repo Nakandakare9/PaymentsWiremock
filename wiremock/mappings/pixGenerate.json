@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/payments/qrcode/pix",
+    "headers": {
+      "seller_id": { "matches": ".*" },
+      "Content-Type": { "contains": "application/json" },
+      "Authorization": { "matches": ".*" },
+      "x-qrcode-expiration-time": { "matches": ".*" }
+    },
+    "bodyPatterns": [
+      { "matchesJsonPath": "$.amount" },
+      { "matchesJsonPath": "$.currency" },
+      { "matchesJsonPath": "$.order_id" },
+      { "matchesJsonPath": "$.customer_id" }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "payment_id": "1a938e0d-26ab-4ac2-b263-ab46a99e4356",
+      "status": "WAITING",
+      "description": "QR Code gerado com sucesso e aguardando o pagamento.",
+      "additional_data": {
+        "transaction_id": "8289874875871543653292342",
+        "qr_code": "00020101021226740014br.gov.bcb.pix210812345678220412342308123456782420001122334455 667788995204000053039865406123.455802BR5913FULANO DE TAL6008BRASILIA62190515RP12345678- 201980720014br.gov.bcb.pix2550bx.com.br/spi/U0VHUkVET1RPVEFMTUVOVEVBTEVBVE9SSU8=63 0434D1",
+        "creation_date_qrcode": "2021-02-14T17:50:12Z",
+        "expiration_date_qrcode": "2021-02-14T17:51:52Z",
+        "psp_code": "033"
+      }
+    }
+  }
+}
