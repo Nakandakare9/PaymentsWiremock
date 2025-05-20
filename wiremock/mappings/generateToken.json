@@ -7,7 +7,8 @@
       "content-type": { "contains": "application/x-www-form-urlencoded" }
     },
     "bodyPatterns": [
-      { "equalTo": "scope=oob&grant_type=client_credentials" }
+      { "contains": "scope=oob" },
+      { "contains": "grant_type=client_credentials" }
     ]
   },
   "response": {

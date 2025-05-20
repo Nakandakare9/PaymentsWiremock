@@ -11,8 +11,8 @@
     "bodyPatterns": [
       { "matchesJsonPath": "$.amount" },
       { "matchesJsonPath": "$.currency" },
-      { "matchesJsonPath": "$.order_id" },
-      { "matchesJsonPath": "$.customer_id" }
+      { "matchesJsonPath": "$.orderId" },
+      { "matchesJsonPath": "$.customerId" }
     ]
   },
   "response": {

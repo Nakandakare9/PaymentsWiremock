@@ -20,13 +20,13 @@
       "Content-Type": "application/json"
     },
     "jsonBody": {
-      "payment_id": "c1e2d3f4-5678-1234-9abc-def012345678",
+      "payment_id": "48",
       "status": "APPROVED",
       "description": "Pagamento aprovado com sucesso.",
       "authorization_code": "123456",
       "amount": 100,
       "currency": "BRL",
-      "order_id": "6d2e4380-d8a3-4ccb-9138-c289182818a3"
+      "order_id": "123"
     }
   }
 }

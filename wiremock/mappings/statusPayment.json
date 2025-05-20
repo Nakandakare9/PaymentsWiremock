@@ -37,8 +37,31 @@
         "order_id": "DEV-1608748980",
         "status": "APPROVED",
         "received_at": "2017-03-19T16:30:30.764Z",
-        "credit": {},
-        "debit": {}
+        "credit": {
+          "delayed": false,
+          "authorization_code": "6964722471672911",
+          "authorized_at": "2017-03-19T16:30:30Z",
+          "reason_code": "00",
+          "reason_message": "transaction approved",
+          "acquirer": "GETNET",
+          "soft_descriptor": "LOJA*TESTE*COMPRA-123",
+          "brand": "Mastercard",
+          "terminal_nsu": "006090",
+          "acquirer_transaction_id": "113880914",
+          "transaction_id": "1002217281190421"
+        },
+        "debit": {
+          "authorization_code": "6964722471672911",
+          "authorized_at": "2017-03-19T16:30:30Z",
+          "reason_code": "00",
+          "reason_message": "transaction approved",
+          "acquirer": "GETNET",
+          "soft_descriptor": "LOJA*TESTE*COMPRA-123",
+          "brand": "Mastercard",
+          "terminal_nsu": "006090",
+          "acquirer_transaction_id": "113880914",
+          "transaction_id": "1002217281190421"
+        }
       }
     }
   }
