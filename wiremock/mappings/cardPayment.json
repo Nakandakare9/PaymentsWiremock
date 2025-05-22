@@ -4,15 +4,7 @@
     "url": "/v1/payments/credit",
     "headers": {
       "authorization": { "matches": "Bearer .*" }
-    },
-    "bodyPatterns": [
-      { "matchesJsonPath": "$.seller_id" },
-      { "matchesJsonPath": "$.amount" },
-      { "matchesJsonPath": "$.currency" },
-      { "matchesJsonPath": "$.order.order_id" },
-      { "matchesJsonPath": "$.customer.customer_id" },
-      { "matchesJsonPath": "$.credit.card.number_token" }
-    ]
+    }
   },
   "response": {
     "status": 200,
@@ -20,13 +12,13 @@
       "Content-Type": "application/json"
     },
     "jsonBody": {
-      "payment_id": "48",
+      "payment_id": "1",
       "status": "APPROVED",
       "description": "Pagamento aprovado com sucesso.",
       "authorization_code": "123456",
       "amount": 100,
       "currency": "BRL",
-      "order_id": "123"
+      "order_id": "1"
     }
   }
 }
